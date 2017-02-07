@@ -14,4 +14,20 @@
       <img src='http://a.fssta.com/content/dam/fsdigital/fscom/NBA/images/2014/06/15/Many_Faces_Of_LeBron_James/lebron-james-sad-face-game-5-loss-spurs-2014-nba-finals.vresize.1200.675.high.12.jpg'>
     </div>
   </body>
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script>
+    var audio = new Audio('rickroll.mp3');
+    $('.lbron').on('click', function(){
+      if($('.lbron').hasClass('clicked')){
+        audio.pause();
+        $('.lbron').removeClass('clicked');
+      }else{
+        audio.play();
+        $('.lbron').addClass('clicked');
+      }
+
+    });
+
+  </script>
 </html>
